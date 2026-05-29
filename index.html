@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAGNUM GYMS | Premium Cinematic Fitness Experience</title>
+    <meta name="description" content="Elevate your physical potential with Magnum Gyms. Claim your free 1-Day VIP pass and experience our luxury gym in Jalandhar, Punjab.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Atmospheric elements -->
+    <div class="atmosphere">
+        <div class="grid-overlay"></div>
+        <div class="light-beam light-beam-left"></div>
+        <div class="light-beam light-beam-right"></div>
+        <div class="ambient-glow glow-blue"></div>
+        <div class="ambient-glow glow-purple"></div>
+    </div>
+
+    <!-- Interactive Canvas for Floating Dust Particles -->
+    <canvas id="dust-canvas"></canvas>
+
+    <!-- Header Navigation -->
+    <header>
+        <a href="#" class="logo" id="header-logo">Magnum</a>
+        <nav>
+            <ul>
+                <li><a href="#training" id="nav-training">Programs</a></li>
+                <li><a href="#free-trial" id="nav-trial">Free VIP Pass</a></li>
+                <li><a href="#location" id="nav-location">Location & Hours</a></li>
+            </ul>
+        </nav>
+        <a href="#free-trial" class="cta-header" id="nav-cta">Claim Free Pass</a>
+    </header>
+
+    <!-- Hero Viewport -->
+    <main>
+        <section class="hero" id="hero-section">
+            <!-- Background Title for depth -->
+            <div class="hero-bg-title" id="bg-depth-title">MAGNUM</div>
+
+            <!-- Floating Barbell Component -->
+            <div class="barbell-container" id="barbell-wrapper">
+                <img src="Choice_4__Abstract_&_Minimalist_202605291224.jpeg" alt="Anti-gravity Levitating Barbell" class="barbell-image" id="barbell-img">
+                <div class="barbell-shadow" id="barbell-floor-shadow"></div>
+            </div>
+
+            <!-- Foreground Hero Text & Actions -->
+            <div class="hero-content">
+                <div class="hero-text-left">
+                    <div class="hero-subtitle">
+                        <span class="pulse-indicator"></span>
+                        Premium Fitness Atmosphere
+                    </div>
+                    <h1 class="hero-title">Defy Gravity.<br>Define Power.</h1>
+                    <p class="hero-desc">Experience a new dimension of training at Magnum Gyms. Claim your free 1-Day VIP trial pass to explore our luxurious high-performance environment.</p>
+                    <div class="hero-buttons">
+                        <a href="#free-trial" class="btn btn-primary" id="btn-start">Get Free Pass</a>
+                        <a href="#training" class="btn btn-secondary" id="btn-explore">Explore Programs</a>
+                    </div>
+                </div>
+
+                <div class="hero-text-right">
+                    <div class="stat-item">
+                        <div class="stat-number" id="stat-coaches">18<span>+</span></div>
+                        <div class="stat-label">Elite Mentors</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="stat-space">15K<span>sqft</span></div>
+                        <div class="stat-label">Luxury Space</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="stat-sessions">24<span>/7</span></div>
+                        <div class="stat-label">Infinite Access</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secondary Section for Programs -->
+        <section class="secondary-section" id="training">
+            <div class="sec-grid-overlay"></div>
+            
+            <div class="section-header">
+                <span class="section-tag">Elite Disciplines</span>
+                <h2 class="section-title">Designed for absolute performance</h2>
+            </div>
+
+            <div class="cards-container">
+                <div class="card" style="--card-glow-color: rgba(0, 229, 255, 0.2); --card-border-color: var(--neon-blue);">
+                    <div class="card-num">01</div>
+                    <h3 class="card-title">Hypertrophy Lab</h3>
+                    <p class="card-desc">Science-driven hypertrophy protocols targeting clean muscular growth using premium biomechanically-optimized loaded tools.</p>
+                </div>
+                <div class="card" style="--card-glow-color: rgba(189, 0, 255, 0.2); --card-border-color: var(--neon-purple);">
+                    <div class="card-num">02</div>
+                    <h3 class="card-title">Athletic Strength</h3>
+                    <p class="card-desc">Unleash explosive power and absolute compound load capacities under the guidance of world-class weightlifting mentors.</p>
+                </div>
+                <div class="card" style="--card-glow-color: rgba(0, 229, 255, 0.2); --card-border-color: var(--neon-blue);">
+                    <div class="card-num">03</div>
+                    <h3 class="card-title">Conditioning Tech</h3>
+                    <p class="card-desc">High-intensity cardiovascular stamina systems designed to elevate anaerobic thresholds in high-contrast neon metabolic zones.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Free Trial Section -->
+        <section class="trial-section" id="free-trial">
+            <div class="sec-grid-overlay"></div>
+            
+            <div class="section-header">
+                <span class="section-tag">Free Trial Pass</span>
+                <h2 class="section-title">Claim Your VIP Experience</h2>
+            </div>
+
+            <div class="trial-container">
+                <!-- Registration Form Card -->
+                <div class="trial-card" id="trial-form-card">
+                    <h3 class="trial-card-title">Register for 1-Day VIP Pass</h3>
+                    <p class="trial-card-subtitle">Complete your details to instantly generate your all-access training pass.</p>
+                    
+                    <form id="free-trial-form">
+                        <div class="form-group">
+                            <label for="trial-name">Full Name</label>
+                            <input type="text" id="trial-name" required placeholder="e.g. Anjali Yadav">
+                        </div>
+                        <div class="form-group">
+                            <label for="trial-email">Email Address</label>
+                            <input type="email" id="trial-email" required placeholder="e.g. anjali@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="trial-phone">Phone Number</label>
+                            <input type="tel" id="trial-phone" required placeholder="e.g. 87226 00007">
+                        </div>
+                        <div class="form-group">
+                            <label for="trial-date">Preferred Date</label>
+                            <input type="date" id="trial-date" required>
+                        </div>
+                        <button type="submit" class="btn-submit" id="btn-submit-trial">Generate VIP Pass</button>
+                    </form>
+                </div>
+
+                <!-- Digital Ticket Pass Container (Initially Hidden) -->
+                <div class="ticket-container" id="vip-ticket" style="display: none;">
+                    <div class="ticket-glow"></div>
+                    <div class="ticket-body">
+                        <div class="ticket-header">
+                            <span class="ticket-logo">Magnum</span>
+                            <span class="ticket-badge">VIP PASS</span>
+                        </div>
+                        
+                        <div class="ticket-content">
+                            <div class="ticket-title">FREE VIP ACCESS</div>
+                            
+                            <div class="ticket-details">
+                                <div class="t-col">
+                                    <div class="t-label">HOLDER</div>
+                                    <div class="t-val" id="ticket-holder">Anjali Yadav</div>
+                                </div>
+                                <div class="t-col">
+                                    <div class="t-label">PASS ID</div>
+                                    <div class="t-val" id="ticket-id">MG-84920</div>
+                                </div>
+                                <div class="t-col">
+                                    <div class="t-label">VALID DATE</div>
+                                    <div class="t-val" id="ticket-date">May 30, 2026</div>
+                                </div>
+                                <div class="t-col">
+                                    <div class="t-label">ACCESS STATUS</div>
+                                    <div class="t-val" style="color: var(--neon-blue); text-shadow: 0 0 5px var(--neon-blue-glow);">ALL-ACCESS</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ticket-footer">
+                            <div class="ticket-instructions">Present this generated barcode at the reception desk for instant entrance.</div>
+                            <div class="barcode-container">
+                                <div class="barcode-stripes"></div>
+                                <div class="barcode-number" id="barcode-num">MG-84920-20260530</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location, Contact & Hours Section -->
+        <section class="location-section" id="location">
+            <div class="sec-grid-overlay"></div>
+            
+            <div class="section-header">
+                <span class="section-tag">Find Us</span>
+                <h2 class="section-title">Club Location & Hours</h2>
+            </div>
+
+            <div class="location-container">
+                <!-- Contact Cards -->
+                <div class="location-info-card">
+                    <div class="contact-item">
+                        <div class="contact-label">Address</div>
+                        <div class="contact-value">
+                            <a href="https://maps.google.com/?q=Magnum+Gyms+Heights+2+66+Feet+Rd+near+Pholriwal+AGI+Jalandhar+Punjab+144005" target="_blank" rel="noopener noreferrer">
+                                Heights 2, 66 Feet Rd,<br>
+                                near Pholriwal, AGI,<br>
+                                Jalandhar, Punjab 144005
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item" style="margin-bottom: 0;">
+                        <div class="contact-label">Contact Hotline</div>
+                        <div class="contact-value">
+                            <a href="tel:8722600007">+91 87226 00007</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hours Card -->
+                <div class="location-hours-card">
+                    <div class="contact-label" style="margin-bottom: 20px;">Weekly Schedule</div>
+                    <ul class="hours-list">
+                        <li class="hours-row" data-day="1">
+                            <span class="hours-day">Monday</span>
+                            <span class="hours-time">5:00 AM – 10:30 PM</span>
+                        </li>
+                        <li class="hours-row" data-day="2">
+                            <span class="hours-day">Tuesday</span>
+                            <span class="hours-time">5:00 AM – 10:30 PM</span>
+                        </li>
+                        <li class="hours-row" data-day="3">
+                            <span class="hours-day">Wednesday</span>
+                            <span class="hours-time">5:00 AM – 10:30 PM</span>
+                        </li>
+                        <li class="hours-row" data-day="4">
+                            <span class="hours-day">Thursday</span>
+                            <span class="hours-time">5:00 AM – 10:30 PM</span>
+                        </li>
+                        <li class="hours-row" data-day="5">
+                            <span class="hours-day">Friday</span>
+                            <span class="hours-time">5:00 AM – 10:30 PM</span>
+                        </li>
+                        <li class="hours-row" data-day="6">
+                            <span class="hours-day">Saturday</span>
+                            <span class="hours-time">5:00 AM – 10:30 PM</span>
+                        </li>
+                        <li class="hours-row" data-day="0">
+                            <span class="hours-day">Sunday</span>
+                            <span class="hours-time">8:00 AM – 12:30 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 MAGNUM GYMS. Heights 2, 66 Feet Rd, near Pholriwal, AGI, Jalandhar, Punjab 144005.</p>
+    </footer>
+
+    <!-- Logic Script -->
+    <script src="app.js"></script>
+</body>
+</html>
